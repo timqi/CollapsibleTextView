@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="CollapsibleTextView">
+    <attr name="suffixColor" format="color"/>
+    <attr name="collapsedLines" format="integer"/>
+    <attr name="collapsedText" format="string"/>
+    <attr name="expandedText" format="string"/>
+    <attr name="suffixTrigger" format="boolean"/>
+  </declare-styleable>
+
+</resources>

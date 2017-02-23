@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/activity_main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#fff"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  >
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+      <com.timqi.collapsibletextview.CollapsibleTextView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:text="Found a workaround that is quite straight forward. Define ClickableSpan on all the text areas that are not part of the links and handle the click on them as if the text view was clicked"
+        android:textColor="#000"
+        app:collapsedLines="2"
+        app:collapsedText="... Show All"
+        app:expandedText=" Hide"
+        app:suffixColor="#f00"
+        app:suffixTrigger="true"
+        />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+          android:id="@+id/showShort"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Short"
+          />
+
+        <Button
+          android:id="@+id/showLong"
+          android:text="Long"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>
