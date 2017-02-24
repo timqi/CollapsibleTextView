@@ -22,19 +22,32 @@
       android:orientation="vertical"
       >
 
-      <com.timqi.collapsibletextview.CollapsibleTextView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
-        android:text="Found a workaround that is quite straight forward. Define ClickableSpan on all the text areas that are not part of the links and handle the click on them as if the text view was clicked"
-        android:textColor="#000"
-        app:collapsedLines="2"
-        app:collapsedText="... Show All"
-        app:expandedText=" Hide"
-        app:suffixColor="#f00"
-        app:suffixTrigger="true"
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <com.timqi.collapsibletextview.CollapsibleTextView
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/normal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#22ff0000"
+          android:padding="5dp"
+          android:textColor="#000"
+          app:collapsedLines="2"
+          app:collapsedText=" Show All"
+          app:expandedText=" Hide"
+          app:suffixColor="#0000ff"
+          app:suffixTrigger="true"
+          />
+      </FrameLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#22000000"
         />
 
       <LinearLayout
@@ -52,12 +65,148 @@
 
         <Button
           android:id="@+id/showLong"
-          android:text="Long"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:text="Long"
+          />
+
+
+        <Button
+          android:id="@+id/collapsed"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="collapsed"
+          />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+          android:id="@+id/redSuffix"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="red suffix"
+          />
+
+        <Button
+          android:id="@+id/blueSuffix"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Blue suffix"
+          />
+
+        <Button
+          android:id="@+id/expanded"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="expanded"
           />
       </LinearLayout>
 
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+          android:id="@+id/collapsed1line"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1 Line"
+          />
+
+        <Button
+          android:id="@+id/collapsed2lines"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2 Lines"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+          android:id="@+id/suffixTrigger"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="suffix trigger"
+          />
+
+        <Button
+          android:id="@+id/fullTextTrigger"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="full text trigger"
+          />
+      </LinearLayout>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:text="Suffix Text:"
+        android:textColor="#000"
+        />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#22000000"
+        />
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+          android:id="@+id/collapsedTextShowText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="show text"
+          />
+
+        <Button
+          android:id="@+id/collapsedTextShowAll"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="show all"
+          />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+          android:id="@+id/expandedTextHide"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="hide"
+          />
+
+        <Button
+          android:id="@+id/expandedTextHideText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="hide text"
+          />
+
+      </LinearLayout>
     </LinearLayout>
   </ScrollView>
 
