@@ -38,13 +38,16 @@ CollapsibleTextView mCollapsibleTextView = (CollapsibleTextView) findViewById(R.
 mCollapsibleTextView.setFullString(mLongText);
 ```
 
-Set expanded or collapsed
+Set status expanded or collapsed
 
 ```java
 mCollapsibleTextView.setExpanded(true);
 
 //mCollapsibleTextView.setExpanded(false);
 ```
+
+Configuration
+================
 
 - See the example code in project is the simplest way to konw how to use WindRoseDiagramView. And here to provide a number of parameters to explain.
 
